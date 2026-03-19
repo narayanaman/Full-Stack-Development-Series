@@ -19,7 +19,7 @@
     background-color:#cceaff;
     position:relative;
     top:50px;
-    z-index:
+    z-index:1;
 }
 .three{
     background-color:#ffabcd;
