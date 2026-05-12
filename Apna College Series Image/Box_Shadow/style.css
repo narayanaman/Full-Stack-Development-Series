@@ -13,3 +13,27 @@
 .box:hover{
     box-shadow:2rem 2rem 2rem #333,inset -2rem -2rem 2rem #fff;
 }
+
+/* i want to add 2 loader circle part */
+
+.loader{
+    border:0.5rem solid #12efad70;
+    border-top:0.5px solid #333;
+    border-radius:50%;
+    width:10rem;
+    height:10rem;
+    animation:spin 2s linear infinite;
+    margin:0 auto;
+    margin-top:2rem;
+    position:relative;
+
+}
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+
+}
