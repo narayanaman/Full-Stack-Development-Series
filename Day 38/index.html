@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Semester Result Form</h2>
+   <div id="form" class="container">
+    <div class="row">
+        <form action="#" class="mb-3 col">
+        <label class="form-label" for="name">Student Name</label>
+        <input type="text" class="form-control" placeholder="Student Name" id="name">
+    </form>
+    <form action="#" class="mb-3 col">
+        <label class="form-label" for="rollno">Roll_No</label>
+        <input type="number" class="form-control" placeholder="Roll_No" id="rollno">
+    </form>
+    </div>
+    <div class="row">
+        <form action="#" class="mb-3 col">
+        <label class="form-label" for="email">Email</label>
+        <input type="text" class="form-control" placeholder="Email" id="email">
+    </form>
+    <form action="#" class="mb-3 col">
+        <label class="form-label" for="password">Password</label>
+        <input type="password" class="form-control" placeholder="Password" id="password">
+    </form>
+    </div>
+    <div class="row">
+        <form action="#" class="mb-3 col">
+        <label class="form-label" for="birth">Date of Birth</label>
+        <input type="date" class="form-control" placeholder="Date of birth" id="birth">
+    </form>
+    <form action="#" class="mb-3 col">
+        <label class="form-label" for="resume">Upload Resume</label>
+        <input type="file" class="form-control" placeholder="Resume" id="resume">
+    </form>
+    </div>
+    <div class="row">
+         <div class="md-3 col">
+        <select class="form-select">
+            <option selected>Choose Your Course</option>
+            <option value="1">BCA</option>
+            <option value="2">B.Tech</option>
+            <option value="3">B.Pharma</option>
+            <option value="4">BBA</option>
+            <option value="5">Other's</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="md-3 form-check col">
+        <input type="checkbox" class="form-check-input" id="check">
+        <label for="check" class="form-check-label">Agree</label>
+    </div>
+    <div class="md-3 form-check col">
+        <input type="radio" id="radio" class="form-check-input">
+        <label for="radio" class="from-check-label">Yes/</label>
+
+        <input type="radio" id="radio" class="form-check-input">
+        <label for="radio" class="from-check-label">No</label>
+    </div>
+    </div>
+    </div>
+     <div class="form-check form-switch col">
+  <input class="form-check-input" type="checkbox" role="switch" id="switch">
+  <label class="form-check-label" for="switch">On/Off</label>
+    </div> 
+    
+    <button id="btn">Submit</button>
+   </div>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+</html>
