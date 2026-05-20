@@ -1,0 +1,43 @@
+div{
+    color:darkslategray;
+    background-color:rgb(99, 223, 254)
+}
+*{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+h1{
+    text-align:center;
+    color:darkslategray;
+    background-color:rgb(99, 223, 254);
+}
+h1:hover{
+    color:rgb(255, 111, 111);
+    background-color: rgb(164, 98, 255);
+}
+h2{
+    text-align:center;
+    background-color:rosybrown;
+}
+h2:hover{
+    color:rgb(255, 111, 111);
+    background-color: rgb(164, 98, 255);
+}
+button{
+    display:block;
+    background-color:rosybrown;
+    color:darkslategray;
+}
+button:hover{
+    background-color:rgb(161, 254, 99);
+    color:darkslategray;
+}
+input{
+    display:block;
+    background-color:rgb(229, 255, 116);
+    color:darkslategray;
+}
+input:hover{
+    background-color: rgb(250, 182, 100);
+    color:color-mix(in srgb-linear, color percentage, color percentage);
+}

@@ -1,0 +1,27 @@
+*{
+    font-family:Courier-New;
+}
+h1{
+    color:#1b74e4;
+}
+#search{
+    background-color:black;
+    color:white;
+}
+#login,#signup{
+    background-color:aqua;
+
+}
+#signup:hover{
+    background-color:dimgray;
+    color:rgb(90, 241, 52);
+    
+}
+#login:hover{
+    background-color:dimgray;
+    color:rgb(90, 241, 52);
+}
+#search:hover{
+     background-color:dimgray;
+    color:rgb(90, 241, 52);
+}

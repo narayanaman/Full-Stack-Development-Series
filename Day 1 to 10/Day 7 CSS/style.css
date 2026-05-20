@@ -1,0 +1,82 @@
+*{
+    font-family:"verdana";
+
+}
+h1{
+    color:#F52936;
+    text-transform:uppercase;
+    height:50px;
+}
+h1:hover{
+    color:hotpink;
+    text-decoration: capitalize;
+
+}
+
+h3{
+    color:#F52936;
+}
+#login{
+    color:rgba(255, 186, 11, 0.971);
+    background-color:#252754
+}
+#login:hover{
+    color:white;
+    background-color:teal;
+    text-transform:uppercase;
+}
+#signup{
+    color:teal;
+    background-color:#252754;
+}
+#signup:hover{
+    color:yellow;
+    background-color:violet;
+    text-transform:uppercase;
+}
+ nav a{
+    color:fuchsia;
+    text-decoration:none;
+ }
+
+ .a{
+    color:green;
+    text-transform:uppercase;
+ }
+ #upvote{
+    color:rgb(49, 1, 63);
+    background-color:rgb(0, 255, 255);
+    text-transform:uppercase;
+ }
+ #upvote:hover{
+    color:yellow;
+    background-color:rgb(30, 39, 39);
+    text-transform:normal;
+ }
+ 
+ p{
+    color:hotpink;
+    text-transform:uppercase;
+ }
+input[type]{
+    color:blue;
+    background-color:chocolate;
+    text-transform: uppercase;
+}
+p a{
+    background-color:yellow;
+    color:black;
+    text-decoration:none;
+
+}
+p a:hover{
+    background-color:cyan;
+    color:blue;
+    text-decoration:none;
+}
+input[type]:hover{
+    color:green;
+    background-color:white;
+    text-transform:uppercase;
+
+}
