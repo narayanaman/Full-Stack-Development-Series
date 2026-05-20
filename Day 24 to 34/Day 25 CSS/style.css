@@ -1,0 +1,32 @@
+i{
+    color:hsl(16, 100%, 64%);
+}
+span{
+    color:rgb(253, 156, 20);
+}
+#cantainer{
+    justify-content:space-evenly;
+    display:flex;
+}
+.dog,.cat{
+    width:400px;
+    height:450px;
+    border:2px solid black;
+    border-radius:25px;
+    padding:10px;
+    margin:10px;
+}
+p{
+    font-size:12px;
+    text-align:justify;
+
+}
+img{
+    width:100%;
+    border-radius:25px;
+}
+@media(max-width:400px){
+    #cantainer{
+        flex-wrap:wrap;
+    }
+}

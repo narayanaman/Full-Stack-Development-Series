@@ -1,0 +1,23 @@
+#hi{
+    height:200px;
+    weight:200px;
+    background-color:red;
+    border:2px solid greenyellow;
+    margin:0 auto;
+    margin-top:10px;
+    transition:margin-top 1s 0.2s;
+
+
+}
+#hi:hover{
+   margin-top:400px;
+   background-color: black;
+}
+#45{
+    height:200px;
+    width:200px;
+    background-color:blue;
+    border:2px solid greenyellow;
+    margin:0 auto;
+    margin-top:10px;
+}
