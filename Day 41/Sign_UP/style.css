@@ -1,0 +1,181 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --gradient: linear-gradient(135deg, #8960e2, #3ba2fb);
+    --bg: #f1f2ff;
+    --surface: #fff;
+    --text: #3c4566;
+    --duration: 0.6s;
+    --easing: cubic-bezier(0.16, 1, 0.3, 1);
+    --easing-panel: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.card {
+    position: relative;
+    width: 660px;
+    height: 440px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--surface);
+    box-shadow:
+        0 20px 80px rgba(124, 92, 191, 0.16),
+        0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.toggle {
+    display: none;
+}
+
+.card-bg {
+    position: absolute;
+    inset: 0 auto 0 0;
+    z-index: 2;
+    width: 50%;
+    background: var(--gradient);
+    transition:
+        var(--duration)
+        var(--easing-panel);
+}
+
+.toggle:checked ~ .card-bg {
+    translate: 100% 0;
+}
+
+.hero,
+.form {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        var(--duration)
+        var(--easing-panel);
+}
+
+.hero.signup,
+.form.signup {
+    opacity: 1;
+    visibility: visible;
+    translate: 0;
+}
+
+.hero.signin,
+.form.signup {
+    left: 50%;
+}
+
+.hero.signin {
+    translate: 25% 0;
+}
+
+.form.signin {
+    translate: 50% 0;
+}
+
+.toggle:checked ~ .hero.signup {
+    opacity: 0;
+    visibility: hidden;
+    translate: -25% 0;
+}
+
+.toggle:checked ~ .hero.signin,
+.toggle:checked ~ .form.signin {
+    opacity: 1;
+    visibility: visible;
+    translate: 0;
+}
+
+.toggle:checked ~ .form.signup {
+    opacity: 0;
+    visibility: hidden;
+    translate: -50% 0;
+}
+
+.hero {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 28px;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+.hero p {
+    margin: 0 0 6px;
+    font-size: 14px;
+    line-height: 1.55;
+    opacity: 0.78;
+}
+
+.hero label {
+    padding: 11px 40px;
+    border: 1.5px solid rgba(249, 249, 249, 0.65);
+    border-radius: 32px;
+    background: transparent;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.25s var(--easing);
+}
+
+.hero label:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.form {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    padding: 0 60px;
+    background: var(--surface);
+}
+
+.form h2 {
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.form input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #d6d9e7;
+    border-radius: 12px;
+    padding: 0 14px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form button {
+    height: 48px;
+    border: 0;
+    border-radius: 12px;
+    background: var(--gradient);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}

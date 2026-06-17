@@ -1,0 +1,36 @@
+// TO ---- DO    LIST 
+// LIST - TO SHOW ALL TO DO .
+// LIST - TO ADD A TO DO. 
+// LIST - TO DELETE A TASK.
+// QUIT - TO EXIT THE TO DO .
+
+let todo=[];
+let req=prompt(`Enter your Request`);
+while(true){
+    if(req=="quit"){
+        console.log("Quitting app.");
+        break;
+    }
+    
+    if(req=="list"){
+        console.log("----------");
+        for(let i=0; i<todo.length; i++){
+            console.log(i ,  todo[i]);
+        }
+        console.log("----------");
+    }
+    else if(req=="add"){
+        let task=prompt(`Enter your task for add`);
+        todo.push(task);
+        console.log("Task Added");
+    }
+    else if(req=="delete"){
+        let idx=prompt(`Enter the task index`);
+        tado.splice(idx,1);
+        console.log("task deleted");
+    }
+    else{
+    console.log("Wrong request.!!");
+}
+req=prompt(`Enter Your Request`);
+}
