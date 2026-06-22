@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <input type="text" id="nameInput" placeholder="Enter your name">
+    <h2 id="heading">Your Name</h2>
+
+    <script>
+        let input = document.querySelector("#nameInput");
+        let heading = document.querySelector("#heading");
+
+        input.addEventListener("input", function () {
+            let filteredName = this.value.replace(/[^a-zA-Z ]/g, "");
+            
+            this.value = filteredName; // invalid characters remove from input
+            heading.innerText = filteredName; // show only valid characters
+        });
+    </script>
+    
+</body>
+</html>
